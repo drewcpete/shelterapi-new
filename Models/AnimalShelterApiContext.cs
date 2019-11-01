@@ -14,7 +14,15 @@ namespace AnimalShelterApi.Models
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Animal>().HasData(
-            )
+                new Animal {
+                    ID = 1,
+                    Name = "Boston Rob",
+                    Species = "Boston Terrier",
+                    Age = 5,
+                    Gender = "Male"
+            }
+            
+            );
         }
 
     }

@@ -12,7 +12,8 @@ This is a C# web api for an animal shelter.  The application utilizes swagger ui
 * Run terminal command ```dotnet restore```
 * Run terminal command ```dotnet ef update database```
 * Run terminal command ```dotnet run```
-* Navigate in a web browser to ```https://localhost:5001/swagger``` to view routes
+* Navigate in a web browser to ```https://localhost:5001/swagger``` to view and test routes
+* Open ```animalshelterapi``` schema in MySqlWorkbench to view updates in database
 
 ## Contact
 

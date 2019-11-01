@@ -15,7 +15,6 @@ namespace AnimalShelterApi
         {
             Configuration = configuration;
         }
-
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -54,8 +53,6 @@ namespace AnimalShelterApi
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "AnimalShelterApi API V1");
                 // c.RoutePrefix = string.Empty;
             });
-
-
             // app.UseHttpsRedirection();
             app.UseMvc();
         }

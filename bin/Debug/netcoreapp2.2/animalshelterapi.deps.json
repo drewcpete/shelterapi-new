@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "ecb1d92a8c70eab01324f863143974e5b4429d62"
+    "signature": "3884fd8b0ac07e49da27100cf1058fa08f2e35a3"
   },
   "compilationOptions": {
     "defines": [
@@ -25,6 +25,7 @@
       "animalshelterapi/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Versioning": "4.0.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "MySqlConnector": "0.60.3",
@@ -37,6 +38,20 @@
         },
         "compile": {
           "animalshelterapi.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Versioning/4.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.7242.29028"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore/2.2.6": {
@@ -3384,6 +3399,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i4hwrKQHHTcJdtE87ocbJD9raVYW4EVCI0oX1KipiJncNAdoLzoJGSZnANgqnCwk2ZH34SugO3BDAQ/2gSvtsA==",
+      "path": "microsoft.aspnetcore.mvc.versioning/4.0.0",
+      "hashPath": "microsoft.aspnetcore.mvc.versioning.4.0.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/2.2.6": {
       "type": "package",

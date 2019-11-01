@@ -25,8 +25,14 @@ namespace AnimalShelterApi
                 opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSwaggerGen(c =>
+        {
+            c.SwaggerDoc("v1", new OpenApiInfo { Title = "AnimalShelterApi API", Version = "v1" });
+        });
+            services.AddApiVersioning(o =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "AnimalShelterApi API", Version = "v1" });
+                o.ReportApiVersions = true;
+                o.AssumeDefaultVersionWhenUnspecified = true;
+                o.DefaultApiVersion = new ApiVersion(1, 0);
             });
         }
 
